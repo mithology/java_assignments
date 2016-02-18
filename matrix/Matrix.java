@@ -1,7 +1,6 @@
 package matrix;
 
 import java.util.Arrays;
-
 public class Matrix {
   public int[][] addMatricies(int[][] m1, int[][] m2) {
     int[][] result = new int[m1.length][m1[0].length];
