@@ -1,0 +1,1 @@
+rm -rf out/*.class && javac -cp "src:test:lib/junit-4.12.jar" -d out/ test/MatrixTest.java

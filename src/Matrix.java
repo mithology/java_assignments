@@ -19,24 +19,24 @@ class Matrix {
        matrix[row][column] = values;
        return this;
      }
-   
+
      private int valueAt(int row, int column) {
            return matrix[row][column];
     }
-   
+
     public Matrix hold(int value){
         for(int row = 0; row < rows; row++)
             Arrays.fill(matrix[row], value);
          return this;
    }
-   
+
    public Matrix setValues(int[][] matrix){
            for(int row = 0; row < rows; row++)
                for(int column = 0; column < columns; column++)
                    this.matrix[row][column] = matrix[row][column];
            return this;
        }
-   
+
     public Matrix add(Matrix addendMatrix){
         Matrix resultMatrix = new Matrix(rows, columns);
         for (int row = 0; row < rows ; row++){
@@ -47,6 +47,6 @@ class Matrix {
         }
         return resultMatrix;
     }
-  
+
 
 }
